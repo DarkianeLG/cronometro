@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(47, 207, 207);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.cronometro {
+    color: rgba(226, 13, 56, 0.658);
+    font-size: 50px;
+    margin: 30px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.botoes>button {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgba(252, 252, 252, 0.87);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.botoes > button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+@media (max-width: 845px) {
+    .container {
+        padding: 75px;
+        max-width: 90%;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    .cronometro {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .botoes {
+        flex-direction: row; /* Mantém a direção dos botões em linha */
+        gap: 20px; /* Ajusta o espaçamento entre os botões */
+    }
+}
+
+@media (max-width: 845px) {
+    .container {
+        padding: 75px;
+    }
+
+    .botoes {
+        flex-direction: row; /* Mantém a direção dos botões em linha */
+        gap: 20px; /* Ajusta o espaçamento entre os botões */
+    }
+}
+
+@media(max-width: 1280px) {
+
+    .container {
+        padding: 70px;
+    }
+
+    .botoes {
+        flex-direction: row; /* Mantém a direção dos botões em linha */
+        gap: 20px; /* Ajusta o espaçamento entre os botões */
+    }
+}
+
+@media(max-width: 425px) {
+    .container {
+        padding: 40px;
+    }
+
+    .botoes {
+        flex-direction: row; /* Mantém a direção dos botões em linha */
+        gap: 20px; /* Ajusta o espaçamento entre os botões */
+    }
+}
